@@ -3223,7 +3223,7 @@ _extend(KCmd, {
 			range.selectNode(a.get());
 			self.select();
 		}
-		var html = '<a href="' + _escape(url) + '" data-ke-src="' + _escape(url) + '" ';
+		var html = '<a rel="external nofollow" href="' + _escape(url) + '" data-ke-src="' + _escape(url) + '" ';
 		if (type) {
 			html += ' target="' + _escape(type) + '"';
 		}
