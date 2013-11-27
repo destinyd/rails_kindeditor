@@ -8,6 +8,8 @@ class Kindeditor::Asset
   field :file_type, :type => String
   field :owner_id, :type => Integer
   field :asset_type, :type => String
+
+  belongs_to :attachmentable, polymorphic: true
   
   mount_uploader :asset, Kindeditor::AssetUploader
   validates_presence_of :asset
