@@ -54,7 +54,7 @@ module RailsKindeditor
       options.merge!(:uploadJson => kindeditor_upload_json_path(:owner_id => options.delete(:owner_id)))
       options.merge!(:fileManagerJson => kindeditor_file_manager_json_path)
       if options[:simple_mode] == true
-        options.merge!(:items => %w{fontname fontsize | forecolor hilitecolor bold italic underline removeformat | justifyleft justifycenter justifyright insertorderedlist insertunorderedlist | emoticons image link})
+        options.merge!(:items => %w{fontname fontsize | forecolor hilitecolor bold italic underline removeformat | justifyleft justifycenter justifyright insertorderedlist insertunorderedlist | emoticons image})# link})
       end
       options.delete(:simple_mode)
       options
